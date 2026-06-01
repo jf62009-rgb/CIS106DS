@@ -1,0 +1,18 @@
+Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = "MFST"
+>>> a = "MFST Stock Portfolio"
+>>> Nofshares= 60
+>>> Ppershare = 135
+>>> amntinvested = (Nofshares * Ppershare)
+>>> print(amntinvested)
+8100
+>>> print("$"+amntinvested)
+Traceback (most recent call last):
+  File "<python-input-6>", line 1, in <module>
+    print("$"+amntinvested)
+          ~~~^~~~~~~~~~~~~
+TypeError: can only concatenate str (not "int") to str
+>>> print(f" MSFT Stock Portfolio is ${amntinvested}")
+ MSFT Stock Portfolio is $8100
+>>>
