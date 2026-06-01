@@ -1,0 +1,13 @@
+Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> SN= "Saltz"
+>>> mtpoints = 86
+>>> mtweight= .4
+>>> fepoints = 94
+>>> feweight = .6
+>>> tp= (mtpoints * mtweight)+(fepoints * feweight)
+>>> print(tp)
+90.8
+>>> print(f"{SN}'s final class score was {tp}")
+Saltz's final class score was 90.8
+>>>

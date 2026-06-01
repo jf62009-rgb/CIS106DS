@@ -1,0 +1,58 @@
+Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "f1"="f2"="me"
+  File "<python-input-0>", line 1
+    "f1"="f2"="me"
+    ^^^^
+SyntaxError: cannot assign to literal
+>>> split=f1=f2=f3
+Traceback (most recent call last):
+  File "<python-input-1>", line 1, in <module>
+    split=f1=f2=f3
+                ^^
+NameError: name 'f3' is not defined
+>>> split="f1"="f2"="f3"
+  File "<python-input-2>", line 1
+    split="f1"="f2"="f3"
+          ^^^^
+SyntaxError: cannot assign to literal
+>>> a = 210
+>>> print(a)
+210
+>>> a = (b+c+d)
+Traceback (most recent call last):
+  File "<python-input-5>", line 1, in <module>
+    a = (b+c+d)
+         ^
+NameError: name 'b' is not defined
+>>>
+>>> total="210"
+>>> total/3="friend 1"="friend 2"="friend 3"
+  File "<python-input-8>", line 1
+    total/3="friend 1"="friend 2"="friend 3"
+    ^^^^^^^
+SyntaxError: cannot assign to expression
+>>> "friend 1"="friend 2"="friend 3"={total/3}
+  File "<python-input-9>", line 1
+    "friend 1"="friend 2"="friend 3"={total/3}
+    ^^^^^^^^^^
+SyntaxError: cannot assign to literal
+>>>
+>>> total=210
+>>> share = 210/3
+>>> print(share)
+70.0
+>>> F1=Share
+Traceback (most recent call last):
+  File "<python-input-14>", line 1, in <module>
+    F1=Share
+       ^^^^^
+NameError: name 'Share' is not defined. Did you mean: 'share'?
+>>> F1=share
+>>> F2=share
+>>> Me=share
+>>> (F1+F2+Me)
+210.0
+>>> print(f"if the total is {total} dollars then each of us will recieve ${share}")
+if the total is 210 dollars then each of us will recieve $70.0
+>>>
