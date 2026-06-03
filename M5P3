@@ -1,0 +1,56 @@
+>>> part= str(input("input part here: "))
+input part here: 10
+>>> if part== "10" or part== "55":
+...     up= 1
+... elif part == "99":
+...     up = 2
+... elif part == "80" or part== "70"
+...     up = 3
+... else up = 5
+...
+  File "<python-input-8>", line 5
+    elif part == "80" or part== "70"
+                                    ^
+SyntaxError: expected ':'
+>>> if part== "10" or part== "55":
+...     up= 1
+... elif part == "99":
+...     up = 2
+... elif part == "80" or part== "70":
+...     up = 3
+... else up = 5
+...
+  File "<python-input-9>", line 7
+    else up = 5
+         ^^
+SyntaxError: expected ':'
+>>> if part== "10" or part== "55":
+...     up= 1
+... elif part == "99":
+...     up = 2
+... elif part == "80" or part== "70":
+...     up = 3
+... else:
+...      up = 5
+...
+>>>
+>>>
+>>> if part== "10" or part== "55":
+...     up= 1
+... elif part == "99":
+...     up = 2
+... elif part == "80" or part== "70":
+...     up = 3
+... else:
+...      up = 5
+...
+>>> print(up)
+1
+>>> print("Unit Cost $" up)
+  File "<python-input-15>", line 1
+    print("Unit Cost $" up)
+          ^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> print("Unit Cost $", up)
+Unit Cost $ 1
+>>>
