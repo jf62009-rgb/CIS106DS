@@ -1,0 +1,68 @@
+>>>  qnty= int(input("Enter quantity: "))
+... Enter quantity: 560
+... if qnty >=1000:
+...     up = 10
+... elif 999 >= qnty >= 500:
+...     up = 20
+... else up = 30
+...
+...
+...
+  File "<python-input-75>", line 1
+    qnty= int(input("Enter quantity: "))
+IndentationError: unexpected indent
+>>> qnty=(int(input("Enter quantity: "))
+...
+...
+  File "<python-input-76>", line 1
+    qnty=(int(input("Enter quantity: "))
+         ^
+SyntaxError: '(' was never closed
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 560
+>>> if qnty >= 1000:
+...     up = 10
+... elif 500 <= qnty <= 999:
+...     up = 20
+... else up = 30
+...
+  File "<python-input-78>", line 5
+    else up = 30
+         ^^
+SyntaxError: expected ':'
+>>> if qnty >= 1000:
+...     up = 10
+... elif 500 <= qnty <= 999:
+...     up = 20
+... else:
+...     up = 30
+...
+>>>
+>>>
+>>> if qnty >= 1000:
+...     up = 10
+... elif 500 <= qnty <= 999:
+...     up = 20
+... else:
+...     up = 30
+...
+>>> print(up)
+20
+>>> ep = qnty * up
+>>> tax = (ep * 0.07)
+>>> total = ep + tax
+>>> print("Total":,total)
+  File "<python-input-87>", line 1
+    print("Total":,total)
+                 ^
+SyntaxError: invalid syntax
+>>> print("Total",total)
+Total 11984.0
+>>> print("Total $",total)
+Total $ 11984.0
+>>>
+
+
+
+
+
