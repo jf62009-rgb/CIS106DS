@@ -1,0 +1,15 @@
+>>> qnty = int(input("Number of tickets bought: "))
+Number of tickets bought: 18
+>>> if qnty >= 25:
+...     TP = 50
+... elif 10 <= qnty <= 24:
+...     TP = 60
+... elif 5 <= qnty <= 9:
+...     TP = 70
+... else:
+...     TP = 75
+... TC = qnty * TP
+... print("The total cost was $",TC)
+...
+The total cost was $ 1080
+>>>
