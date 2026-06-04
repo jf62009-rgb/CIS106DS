@@ -1,0 +1,50 @@
+Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ln = input("Employee last name")
+Employee last name Saltz
+>>> sal = int(input("Employee salary"))
+Employee salary 56000
+>>> jl = int(input("Employee job level"))
+Employee job level 8
+>>> if jl >= 10:
+...     br = 0.25
+... elif 5 < jl < 9:
+...     br = 0.2
+... else:
+...     br = 0.1
+... bonus = br * sal
+... print(ln) print("Employee bonus is $"bonus)
+...
+  File "<python-input-3>", line 8
+    print(ln) print("Employee bonus is $"bonus)
+              ^^^^^
+SyntaxError: invalid syntax
+>>> if jl >= 10:
+...     br = 0.25
+... elif 5 < jl < 9:
+...     br = 0.2
+... else:
+...     br = 0.1
+... bonus = br * sal
+... print(ln)
+... print("Employee bonus is $"bonus)
+...
+  File "<python-input-4>", line 9
+    print("Employee bonus is $"bonus)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> if jl >= 10:
+...     br = 0.25
+... elif 5 < jl < 9:
+...     br = 0.2
+... else:
+...     br = 0.1
+... bonus = br * sal
+... print(ln)
+... print("Employee bonus is $",bonus)
+...
+ Saltz
+Employee bonus is $ 11200.0
+>>>
+
+
