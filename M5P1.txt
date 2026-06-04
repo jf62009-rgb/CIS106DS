@@ -1,0 +1,229 @@
+Python 3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1001
+>>> if qnty =>1000:
+  File "<python-input-1>", line 1
+    if qnty =>1000:
+            ^
+SyntaxError: invalid syntax
+>>> if qnty >= 1000:
+...     up = 3
+... else:
+...     up = 5
+...     qnty = 1001
+...
+>>>
+>>> if qnty >= 1000:
+...     up = 3
+... else:
+...     up = 5
+...
+...     ep = qnty * up
+...     tax = (ep * 0.07)
+...     total = ep + tax
+...
+>>> ep=1001
+>>>
+>>>
+>>> if qnty >= 1000:
+...     up = 3
+... else:
+...     up = 5
+...
+...     ep = qnty * up
+...     tax = (ep * 0.07)
+...     total = ep + tax
+...     qnty = 1001
+...
+>>>
+>>> if qnty >= 1000:
+... ...     up = 3
+... ... else:
+... ...     up = 5
+...
+  File "<python-input-10>", line 2
+    ...     up = 3
+    ^^^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>> if qnty >= 1000:
+... ...     up = 3
+... ... else:
+... ...     up = 5
+...  qnty = int(input("Enter quantity: "))
+...
+  File "<python-input-11>", line 2
+    ...     up = 3
+    ^^^
+IndentationError: expected an indented block after 'if' statement on line 1
+>>>
+>>>
+>>> ep = qnty * up
+>>>  if qnty >= 1000:
+... ... ...     up = 3
+... ... ... else:
+... ... ...     up = 5
+... qnty = 1002
+...
+  File "<python-input-15>", line 1
+    if qnty >= 1000:
+IndentationError: unexpected indent
+>>> qnty = int(input("Enter quantity: ))
+  File "<python-input-16>", line 1
+    qnty = int(input("Enter quantity: ))
+                     ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1003
+>>> if qnty >=1000:
+...  up = 5
+...  else:
+...   up = 3
+...
+  File "<python-input-18>", line 3
+    else:
+    ^^^^
+SyntaxError: invalid syntax
+>>> if qnty >=1000:
+...  up = 5
+... else:
+...   up = 3
+...
+>>>
+>>> if qnty >=1000:
+...  up = 5
+... else:
+...   up = 3
+...
+>>> qnty=1003
+>>>
+>>>
+>>>
+>>>
+>>> if qnty >=1000:
+...  up = 5
+... else:
+...   up = 3
+...
+>>> qnty=1003
+>>> if qnty >=1000:
+...  up = 5
+... else:
+...  up = 3
+...
+>>>
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1003
+>>> if qnty >= 1000:
+...  up = 5
+... else up = 3
+...
+  File "<python-input-32>", line 3
+    else up = 3
+         ^^
+SyntaxError: expected ':'
+>>> if qnty >= 1000:
+...  "up" = 5
+... else "up" = 3
+...
+  File "<python-input-33>", line 2
+    "up" = 5
+    ^^^^
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+>>> if qnty >= 1000:
+...  "up" == 5
+... else "up" == 3
+...
+  File "<python-input-34>", line 3
+    else "up" == 3
+         ^^^^
+SyntaxError: expected ':'
+>>>
+>>>
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1003
+>>> if qnty >= 1000:
+...  up = 3
+... else:
+...  up = 5
+...
+>>>
+>>> qnty = int(input("Enter quantity: "))
+... Enter quantity: 1003
+... >>> if qnty >= 1000:
+... ...  up = 3
+... ... else: up = 5
+...
+  File "<python-input-40>", line 2
+    Enter quantity: 1003
+          ^^^^^^^^
+SyntaxError: invalid syntax
+>>>
+>>> qnty = int(input("Enter quantity: "))
+... Enter quantity: 1003
+... if qnty >= 1000:
+...     up = 3
+... else:
+...     up = 5
+...
+  File "<python-input-42>", line 2
+    Enter quantity: 1003
+          ^^^^^^^^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1003
+>>> if qnty >= 1000:
+...     up =3
+... else:
+...     up = 5
+...
+>>>
+>>> print(up)
+3
+>>>
+>>> ep= qnty * up:
+  File "<python-input-50>", line 1
+    ep= qnty * up:
+                 ^
+SyntaxError: invalid syntax
+>>> ep= qnty * up
+>>> tax= (ep * 0.07)
+>>> total = ep + tax
+>>>
+>>>
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1003
+>>> if qnty >= 1000:
+...     up =3
+... else:
+...     up = 5
+...
+>>>
+>>> qnty = int(input("Enter quantity: "))
+Enter quantity: 1003
+>>> if qnty >=1000:
+...     up = 3
+... else:
+...     up = 5
+...     ep= qnty * up
+...     tax= (ep * 0.07)
+...     total = ep + tax
+...     print("Total:",total)
+...
+>>>
+>>> if qnty >=1000:
+...     up = 3
+... else:
+...     up = 5
+...
+...
+... ep = qnty * up
+... tax= (ep * 0.07)
+... total = ep + tax
+...
+... print("Total:",total)
+...
+Total: 3219.63
+>>>
