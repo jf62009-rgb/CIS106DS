@@ -1,0 +1,23 @@
+with open("p3.txt", "r") as file:
+    while True:
+        name = file.readline().strip()
+
+        if not name:
+            break
+
+        salary = float(file.readline().strip())
+
+        if salary > 100000:
+            BR = 0.20
+        elif 50000 <= salary <= 100000:
+            BR = 0.15
+        else:
+            BR = 0.10
+
+        bonus = salary * BR
+
+        tb = 0
+
+        tb += bonus
+        print("Name:", name, "Salary: $", salary, "Bonus: $", bonus)
+    print("Total Bonus: $",tb)
