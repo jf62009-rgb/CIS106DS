@@ -1,0 +1,24 @@
+total_orders = 0
+
+total_ext_price = 0
+
+average_orders = total_orders/4
+with open("p4.txt", "r") as file:
+    while True:
+        name = file.readline().strip()
+
+        if not name:
+            break
+
+        orders = int(file.readline().strip())
+
+        if not orders:
+            break
+        price = float(file.readline().strip())
+        ext_price = (price * orders)
+        total_orders = total_orders + orders
+        average_orders = total_orders/4
+       
+        total_ext_price = ext_price + total_ext_price
+        print("Utensil name:",name, "Utensil orders:",orders, "Utensil price: $",price,"Extended price: $",ext_price)
+    print("Total extended price: $",total_ext_price,"Total orders:",total_orders, "Average orders:", average_orders)
