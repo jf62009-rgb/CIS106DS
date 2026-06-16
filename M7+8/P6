@@ -1,0 +1,17 @@
+total_students = 0 
+
+while True:
+    decision = input("type y to continue, n to stop")
+    if decision == "n":
+     break
+    elif decision != "y":
+        print("please type y or n")
+        continue
+    last_name = input("Enter student's last name")
+    test_score_1 = int(input("Enter student's first test score"))
+    test_score_2 = int(input("Enter student's second exam score"))
+    test_average = (test_score_1 + test_score_2)/2
+    print("Student's last name:",last_name)
+    print("Student's average test score:",test_average)
+    total_students += 1 
+print("Total students entered:",total_students)
