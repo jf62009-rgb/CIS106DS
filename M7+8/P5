@@ -1,0 +1,31 @@
+total_students = 0
+sum_of_tuition = 0 
+total_credits_taken = 0
+with open("p5.txt", "r") as file:
+    while True:
+        name =file.readline().strip()
+
+        if not name:
+            break
+        
+        credit = file.readline().strip()
+        if credit == "O" :
+            ppc = 500
+        else:
+           ppc = 250
+           if not credit:
+               break
+        
+        credits_taken = int(file.readline().strip())
+       
+        tuition = (ppc * credits_taken)
+        total_students +=1
+        sum_of_tuition += tuition
+        total_credits_taken += credits_taken
+        
+        print("Student name: ",name)
+        print("Price per credit: $",ppc)
+        print("Tuition: $",tuition)
+print("Total students: ",total_students)
+print("Total Sum of tuition: $",sum_of_tuition)
+print("Total crdits taken:",total_credits_taken)
