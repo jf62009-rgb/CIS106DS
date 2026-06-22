@@ -5,7 +5,7 @@ def calcTotal(price, quantity):
     if Total > 10000:
         Total = Total *.90 
         
-    return Total    #return so I actually get a value back when I print the function
+    return Total    #return so I actually get a value back when I run the function
 
 #declare the total extended price
 TEP = 0
