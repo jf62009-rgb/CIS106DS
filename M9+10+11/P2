@@ -1,0 +1,20 @@
+def calcbattingavg(hits,atbats):
+    batting_avg = (hits/atbats)
+    return batting_avg
+total_players = 0
+
+last_name = input("Enter player's last name (type stop to end): ")
+
+while last_name != "stop":
+    atbats = int(input("Enter player's at bats"))
+   
+    hits = int(input("Enter player's hits"))
+    
+    batting_avg = calcbattingavg(hits, atbats)
+    total_players += 1
+    
+    print("Player's last name",last_name)
+    
+    print("Player's batting average",batting_avg)
+    last_name = input("Enter player's last name (type stop to end): ")
+print("Total players entered",total_players)
