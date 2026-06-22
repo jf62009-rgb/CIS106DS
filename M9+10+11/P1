@@ -1,18 +1,20 @@
+#setting up the function, naming the function calcTotal
 def calcTotal(price, quantity):
     Total = (price * quantity)
-    
+   #adding the discount 
     if Total > 10000:
         Total = Total *.90 
         
-    return Total 
- 
+    return Total    #return so I actually get a value back when I print the function
+
+#declare the total extended price
 TEP = 0
 
 
 
 quantity=int(input("Enter quantity greater than 0, type 0 to break:"))
 
-while quantity !=0:
+while quantity !=0: # I add ! = 0 to say, if a value = 0, then stop the loop.
     price = float(input("Enter price :$"))
     Total = calcTotal(price,quantity)    
     TEP += Total
