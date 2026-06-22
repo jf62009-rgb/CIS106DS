@@ -1,0 +1,24 @@
+def calcTotal(price, quantity):
+    Total = (price * quantity)
+    
+    if Total > 10000:
+        Total = Total *.90 
+        
+    return Total 
+ 
+TEP = 0
+
+
+
+quantity=int(input("Enter quantity greater than 0, type 0 to break:"))
+
+while quantity !=0:
+    price = float(input("Enter price :$"))
+    Total = calcTotal(price,quantity)    
+    TEP += Total
+    
+    quantity=int(input("Enter quantity greater than 0, type 0 to break:"))
+    print("Quantity",quantity)
+    print("Total price: $", Total)
+  
+print("Extended price :$",TEP)
