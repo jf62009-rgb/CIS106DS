@@ -1,17 +1,17 @@
-def calcbattingavg(hits,atbats):
-    batting_avg = (hits/atbats)
-    return batting_avg
-total_players = 0
+def calcbattingavg(hits,atbats): #setting up the function
+    batting_avg = (hits/atbats) #calculating batting average
+    return batting_avg #making sure the function actually gives me a result
+total_players = 0 #want to establish this variable now so it doesn't accidentally wind up in the loop or causes syntax issues down the line
 
-last_name = input("Enter player's last name (type stop to end): ")
+last_name = input("Enter player's last name (type stop to end): ") 
 
-while last_name != "stop":
-    atbats = int(input("Enter player's at bats"))
+while last_name != "stop": # I like using the =! as I find it makes it easier to set up the loop
+    atbats = int(input("Enter player's at bats")) 
    
     hits = int(input("Enter player's hits"))
     
-    batting_avg = calcbattingavg(hits, atbats)
-    total_players += 1
+    batting_avg = calcbattingavg(hits, atbats) #adding this line here ensures that the function actually runs as I now have the inputs for atbat and hits
+    total_players += 1 #just making sure the count goes up by one
     
     print("Player's last name",last_name)
     
