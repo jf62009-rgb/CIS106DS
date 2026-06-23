@@ -1,13 +1,13 @@
-def calcendprice(make,model,electric,MSRP):
+def calcendprice(make,model,electric,MSRP): #compared to the other problems, I need to add more than two variables in this function. In this case I needed to add 4
     if (make =="Toyota" and model == "Rav4"):
-        discount = 0.9
+        discount = 0.9 #I decided to make the discount 0.9 and not 0.1 because It saves a step when I do MSRP * discount it gives me the total
     elif (make == "Honda" and model == "Accord"):
         discount = 0.85
     elif electric == "Y":
         discount = 0.7
     else:
         discount = 0.95
-    price = (MSRP * discount)
+    price = (MSRP * discount) #These lines help declare the variables that we need for the equations. I already assigned the discouts, but I need to make sure that price, tax, and end_price are accurately assigned
     tax = price * 0.07 
     end_price = (price + tax)
     return end_price
@@ -15,23 +15,23 @@ total_MSRP = 0
 total_sales= 0
 
     
-start_loop = input("Write Yes to enter the loop")  
+start_loop = input("Write Yes to enter the loop")  #Starting the loop the same way that I did in the previous problem.
 while start_loop == "Yes":
     make= input("Enter vehicle make (Eg: Toyota, Honda, Ford): ")
     model = input("Enter vehicle model (Eg: Rav4, Accord, etc): ")
     electric = input("Enter Electric Vehicle Code(Y=Yes, N=No): ")
     MSRP = float(input("Enter vehicle MSRP"))
 
-    end_price = calcendprice(make,model,electric,MSRP)
+    end_price = calcendprice(make,model,electric,MSRP) #Applying the function in the loop.
     print("MSRP before discount and tax",MSRP)
-    print("End price",end_price)
+    print("End price",end_price) #printing these two varaiables within the loop, I like reprinting the MSRP to show the comparison.
 
     total_MSRP += MSRP
     total_sales += end_price
 
     start_loop = input("Write Yes to continue the loop")
 
-print("Total MSRP",total_MSRP)
+print("Total MSRP",total_MSRP) #making sure these are outside of the loop so it only shows once the loop ends
 print("Total Price",total_sales)
 
     
