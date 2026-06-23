@@ -1,0 +1,29 @@
+def calcforecast(sales,month):
+    if month in (1,2,3):
+        forecastpercent = 0.1
+    elif month in (4, 5, 6):
+        forecastpercent = 0.15
+    elif month in (7, 8, 9):
+        forecastpercent = 0.2
+    else:
+        forecastpercent = 0.25
+    next_months_sales= (sales * (1+forecastpercent))
+    return next_months_sales
+  
+
+keep_going = input("start calculation? y/n")
+
+while keep_going == "y":
+    last_name = input("Enter last name")
+    sales = float(input("Enter sales amount: $"))
+    month = int(input("Enter month number (January= 1, December = 12): "))
+
+    next_months_sales= calcforecast(sales,month)
+   
+   
+    
+    print("Next month's sales: $",next_months_sales,)
+    print("employees last name",last_name)
+    
+    keep_going = input("keep going? y/n")        
+
