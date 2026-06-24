@@ -1,0 +1,15 @@
+def calctotal(quantity,price,discount_rate):
+    cost = quantity * price
+    discount_amount = cost * discount_rate
+    discount_price = cost - discount_amount
+    return (discount_amount, discount_price)
+
+quantity= int(input("Enter quantity"))
+price = float(input("Enter price"))
+discount_rate = float(input("Enter discount rate(eg: .01 = 1% 1=100%): "))
+
+discount_amount, discount_price = calctotal(quantity,price,discount_rate)
+print("Quantity",quantity)
+print("Price: $",price)
+print("Discount amount",discount_amount)
+print("Discount price: $",discount_price)      
