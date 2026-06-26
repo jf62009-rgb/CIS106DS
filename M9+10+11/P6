@@ -1,0 +1,15 @@
+
+def calcresults (exam1,exam2,exam3):
+    average = (exam1 + exam2 + exam3)/3
+    total_points = (exam1 + exam2 + exam3)
+    return (average, total_points)
+
+last_name = input("Enter Student's last name")    
+exam1 = int(input("Enter exam one score"))
+exam2 = int(input("Enter exam two score"))
+exam3 = int(input("Enter exam three score"))
+average,total_points = calcresults(exam1,exam2,exam3)
+
+print("Student's last name",last_name)
+print("Average test score",average)
+print("Total test points",total_points)
