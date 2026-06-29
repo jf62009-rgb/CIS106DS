@@ -1,0 +1,12 @@
+names = ["Daniel", "Evan", "Alex", "Adam", "Colly", "Rachel", "Jenny", "Kate", "Miles" ,"Jess"]
+x = names[0]
+names[0] = "Daniel"
+for x in names: 
+    print(x)
+#This solves the first part of the problem as I assigned the 10 values to names, set x= names[0]. 
+#assigned for x in names to print(x) to print the entire array
+
+names = ["Daniel", "Evan", "Alex", "Adam", "Colly", "Rachel", "Jenny", "Kate", "Miles" ,"Jess"]
+names.reverse() #I used the .reverse method to print the names backwards
+for name in names:
+    print(name) 
