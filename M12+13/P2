@@ -1,0 +1,14 @@
+names = ["Daniel", "Evan", "Alex", "Adam", "Colly", "Rachel", "Jenny", "Kate", "Miles" ,"Jess"]
+test_scores = ["83","90","97","45","96","100","89","85","92","77"]
+print(names[0],test_scores[0]) #if the result shows "Daniel 83" I know that the arrays are properly alligned 
+
+names = ["Daniel", "Evan", "Alex", "Adam", "Colly", "Rachel", "Jenny", "Kate", "Miles" ,"Jess"]
+test_scores = ["83","90","97","45","96","100","89","85","92","77"]
+print(names[0],test_scores[0])
+x = names,test_scores
+for x in (names,test_scores): 
+    print(x) #this answer didn't look quite right. It didn't really align the two arrays. 
+
+for x in range(len(names)):   #the D for Developer video you shared with us helped me with setting up the ranges. Then if I set len(names) it will automatically give me the length of the array
+    print(names[x],test_scores[x]) #it will then print both of the arrays together fully
+    
